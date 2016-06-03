@@ -36,7 +36,7 @@ public class namenum {
 //		System.out.println("Took "+ (endTime - startTime) / 1_000_000_0 + " s");
 	}
 	
-	// reverse approach - map all the names in dict first
+	// reverse approach - map all the names in dict and compare to the num
 	static void mappingMethod(String num) throws IOException {
 		HashMap <String, String> map = new HashMap <String, String> ();
 		map.put("A", "2");
