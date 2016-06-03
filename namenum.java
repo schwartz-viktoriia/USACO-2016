@@ -17,7 +17,6 @@ public class namenum {
 	static PrintWriter out;
 	static StringBuilder possibleName = new StringBuilder();
 	static String [] letters = {"", "", "ABC", "DEF", "GHI", "JKL", "MNO", "PRS", "TUV", "WXZ"};
-//	static Map
 	
 	public static void main(String[] args) throws IOException {
 //		long startTime = System.nanoTime();
