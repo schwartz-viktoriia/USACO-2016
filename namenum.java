@@ -26,8 +26,7 @@ public class namenum {
 		BufferedReader f = new BufferedReader(new FileReader("namenum.in"));
 		out = new PrintWriter(new BufferedWriter(new FileWriter("namenum.out")));
 		String num = f.readLine();
-//		String num = "234643";
-		
+	
 //		printNames(num, "");
 		
 		mappingMethod(num);
