@@ -43,7 +43,6 @@ public class combo {
 			if (diff < 5) overlap[i] = 5 - diff;			
 			if (diff > (n - 6)) overlap[i] += 5 - (n - diff);
 		}
-//		for (int i = 0; i < 3; i++) System.out.println(overlap[i] + " ");
 		
 		int total = 1;
 		for (int i = 0; i < 3; i++) {
