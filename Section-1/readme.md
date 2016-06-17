@@ -1,1 +1,1 @@
-USACO section 1 solutions
+USACO section 1 JAVA solutions
