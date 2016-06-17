@@ -35,9 +35,6 @@ public class wormhole {
 				}
 			}
 		}
-//		for (int i = 0; i < n; i++)
-//		System.out.println(i + ": " + points[i]);
-		
 		
 		countThem();
 		out.println(count);
