@@ -16,25 +16,15 @@ public class namenum {
 	static PrintWriter out;
 	static StringBuilder possibleName = new StringBuilder();
 	static String [] letters = {"", "", "ABC", "DEF", "GHI", "JKL", "MNO", "PRS", "TUV", "WXZ"};
-//	static Map
 	
 	public static void main(String[] args) throws IOException {
-//		long startTime = System.nanoTime();
-		
 		BufferedReader f = new BufferedReader(new FileReader("namenum.in"));
 		out = new PrintWriter(new BufferedWriter(new FileWriter("namenum.out")));
 		String num = f.readLine();
-//		String num = "234643";
-		
-//		printNames(num, "");
-		
 		mappingMethod(num);
 		f.close();
 		realNames.close();
 		out.close();
-		
-//		long endTime = System.nanoTime();
-//		System.out.println("Took "+ (endTime - startTime) / 1_000_000_0 + " s");
 	}
 	
 	// reverse approach - map all the names in dict first
@@ -86,24 +76,5 @@ public class namenum {
 		}
 		if (counter == 0) out.println("NONE");
 	}
-	
-	// takes too long..
-	static void printNames(String num, String name) throws IOException {
-		String l = letters[Integer.parseInt(num.substring(0, 1))];
-		String toCheck = num.substring(1);
-		
-		for (int i = 0; i < 3; i++) {
-			String result = name + l.charAt(i);
-			if (toCheck.length() == 0) {
-				realNames = new BufferedReader(new FileReader("dict.txt"));
-				while (realNames.ready()) {
-					if (result.equals(realNames.readLine()))
-						System.out.println(result);
-				}
-			} else printNames(toCheck, result);
-				
-		}
-	}
-
 }
 
