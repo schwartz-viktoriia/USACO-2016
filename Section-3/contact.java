@@ -60,13 +60,11 @@ public class contact {
 						String s = "000000000000";
 						s += Integer.toBinaryString(j);
 						s = s.substring(s.length() - (A + i));
-						if (output[count + 1].length() + s.length() < split)
-							output[count + 1].append(s + " ");
-						else {
+						if (output[count + 1].length() + s.length() >= split)
 							split = output[count + 1].length() + 80;
 							output[count + 1].setCharAt(output[count + 1].length() - 1, '\n');
-							output[count + 1].append(s + " ");
 						}
+						output[count + 1].append(s + " ");
 					}
 				}
 			}
